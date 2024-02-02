@@ -1,0 +1,47 @@
+Last Lecture Agenda
+1 Literal
+2 Type Assertion 
+3 Operators
+4 control statement/sequential statement
+5 Loop Statement
+6 var Vs Let Vs const
+7 Functions Types 
+
+summary & Interview Questions
+1 How to use Literal
+	var str:string | number;
+	var str:50|boolean
+	
+2 Why we use Type Assertion?
+	var c:any;
+	
+	var temp=(<string> c);
+	
+	var temp=(c as string )
+	
+3 Explain Operators
+	=== => strongly equality ,== 
+4 Which are loop statement & control statement
+if
+while(count!=0){
+....
+}
+
+for(let i=0;i<4;i++){
+....
+}
+5 Difference between var Vs let Vs const
+
+Today's Lecture Agenda
+1 Anonymous Functions
+2 fat arrow function
+3 optional parameter Functions
+4 Default parameter function
+5 Basics of array 
+6 Join method 
+
+summary & Interview Questions
+1 What is Anonymous function?
+2 How to use fat arrow function?
+3 Explain optional parameter function?
+4 Explain default parameter function?
