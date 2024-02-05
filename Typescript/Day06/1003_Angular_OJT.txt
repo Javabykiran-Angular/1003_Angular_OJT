@@ -1,0 +1,99 @@
+Last Lecture Agenda
+1 Anonymous Functions
+ let temp1=	function (){
+	....
+	}
+	temp1();
+	
+	 let temp2=	function (a:number,b:number):number{
+	return (a+b)
+	}
+	let res=temp2(10,2);
+	console.log("Result "+res);
+	
+2 fat arrow function
+	
+	let temp3=()=>{
+	....
+	}
+	
+	temp3();
+	
+	let temp3=(a:number,b:number):number=>{
+	return (a+b)
+	}
+	
+	let res=temp3(10,2);
+	
+3 optional parameter Functions
+	function add1(a?:number,b?:number){
+	...
+	}
+	
+	add1(10);
+4 Default parameter function
+		
+	function add1(a:number,b:number=10){
+	...
+	}	
+	
+	add2(20,60)
+	
+5 Basics of array 
+	let a:number[]=[10,2];
+	let a1:number[]=[];
+	let a=[2.5,'sumit'];
+	let a:any[]=[];
+	
+6 Join method 
+	for(let i=0;i<a.length;i++){
+	....
+	}
+	
+	console.log(a);
+	console.log(a.join("  ");
+
+summary & Interview Questions
+1 What is Anonymous function?
+2 How to use fat arrow function?
+3 Explain optional parameter function?
+4 Explain default parameter function?
+
+Today's Lecture Agenda
+1 foreach method
+	a.foreach((myvalue)=>{
+		console.log(myvalue)
+	
+	})
+2 rest parameter function
+	function display(...item:number[]){
+		console.log(item);
+	}
+	
+	display(10,20,30);
+	
+3 Push & pop Method
+	a.push(40);
+	a.push(78,90,75);
+	let res=a.pop();
+4 Splice method
+	a.splice(1,0,56);
+	a.splice(2,0,55,45,78);
+	a.splice(3,1);
+	a.splice(2,1,80);
+	
+5 slice
+	let res=a.slice(1,6)
+6 map
+	
+	let res= a.map((value)=>{
+		return value*value;
+	});
+	
+
+
+summary & Interview Questions
+1 How to use foreach method ?
+2 Explain Rest Parameter function?
+3 Why we use push & pop Method
+4 How to add data in array on particular index?
