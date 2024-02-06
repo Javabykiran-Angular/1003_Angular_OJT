@@ -1,0 +1,103 @@
+Last Lecture Agenda
+1 foreach method
+	a.foreach((myvalue)=>{
+		console.log(myvalue)
+	
+	})
+2 rest parameter function
+	function display(...item:number[]){
+		console.log(item);
+	}
+	
+	display(10,20,30);
+	
+3 Push & pop Method
+	a.push(40);
+	a.push(78,90,75);
+	let res=a.pop();
+4 Splice method
+	a.splice(1,0,56);
+	a.splice(2,0,55,45,78);
+	a.splice(3,1);
+	a.splice(2,1,80);
+	
+5 slice
+	let res=a.slice(1,6)
+6 map
+	
+	let res= a.map((value)=>{
+		return value*value;
+	});
+	
+
+
+summary & Interview Questions
+1 How to use foreach method ?
+2 Explain Rest Parameter function?
+3 Why we use push & pop Method
+4 How to add data in array on particular index?
+
+
+Today's Lecture Agenda
+1 Array Destructor
+	let a:number[]=[...];
+	
+	let [t1,t2,t3]=a;
+	
+	let [t1,...arr]=a;
+	
+2 Shallow Copy & Deep Copy 
+	let a=10;
+	let b=a;
+	b=20;
+	
+	let arr:number[]=[...];
+	let arr1=arr;
+	
+	arr1[1]=500;
+	
+	let [...arr2]=arr;
+	arr2[1]=400;
+	
+	
+3 swap 2 variable without using 3rd variable?
+	let a=10;
+	let b=20;
+	
+	[a,b]=[b,a];
+	
+	
+4 write a function to return multiple value/operation to collect into the variable
+	
+	function operation(a:number,b:number){
+			return [a+b,a-b,a*b]
+	}
+	
+	let [add,sub,mul]=operation(10,2);
+	
+
+5 Json Object 
+	let jsonObj={
+		id:9,
+		'fname':'..',
+		lname:'...'
+	}
+	
+	console.log(`
+		
+		${jsonObj.id}
+		${jsonObj.fname}
+			
+	`)
+	
+	console.log(`
+		
+		${jsonObj['id']}
+		${jsonObj["fname"]}
+			
+	`)
+
+summary & Interview Questions
+1 What is Array Destructor?
+2 How to swap 2 variable without using 3rd variable?
+3 write a function to return multiple value
