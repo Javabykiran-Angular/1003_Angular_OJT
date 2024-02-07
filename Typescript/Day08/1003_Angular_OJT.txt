@@ -1,0 +1,83 @@
+Last Lecture Agenda
+1 Array Destructor
+	let a:number[]=[...];
+	
+	let [t1,t2,t3]=a;
+	
+	let [t1,...arr]=a;
+	
+2 Shallow Copy & Deep Copy 
+	let a=10;
+	let b=a;
+	b=20;
+	
+	let arr:number[]=[...];
+	let arr1=arr;
+	
+	arr1[1]=500;
+	
+	//deepa copy 
+	
+	let [...arr2]=arr;
+	arr2[1]=400;
+	
+	
+3 swap 2 variable without using 3rd variable?
+	let a=10;
+	let b=20;
+	
+	[a,b]=[b,a];
+	
+	
+4 write a function to return multiple value/operation to collect into the variable
+	
+	function operation(a:number,b:number){
+			return [a+b,a-b,a*b]
+	}
+	
+	let [add,sub,mul]=operation(10,2);
+	
+
+5 Json Object 
+	let jsonObj={
+		id:9,
+		'fname':'..',
+		lname:'...'
+	}
+	
+	console.log(`
+		
+		${jsonObj.id}
+		${jsonObj.fname}
+			
+	`)
+	
+	console.log(`
+		
+		${jsonObj['id']}
+		${jsonObj["fname"]}
+			
+	`)
+
+summary & Interview Questions
+1 What is Array Destructor?
+2 How to swap 2 variable without using 3rd variable?
+3 write a function to return multiple value
+
+Today's Lecture Agenda
+1 Array of Object 
+2 Additional Features
+3 Oops 
+	- classes
+	- method
+	- inheritance 
+	- polymorphism
+4 Class
+5 Property
+6 Method
+7 Constructor
+
+summary & Interview Questions
+1 How to create Array of Object
+2 What is property,class & object?
+3 How to iterate Array of Object?
