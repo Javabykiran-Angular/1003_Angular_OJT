@@ -1,0 +1,83 @@
+Last Lecture Agenda
+1 Array of Object 
+	arrobj=[
+		{
+			id:..,
+			fname:..
+			lname:..,
+			country:{
+				cid:..,
+				cname:...
+			},
+			month:[...],
+			result:[
+				{
+					subj:..
+					marks:..
+				},
+				{
+					subj:..
+					marks:..
+				}
+			]
+		},
+		{
+			id:..,
+			fname:..
+			lname:..
+		},
+		{
+			id:..,
+			fname:..
+			lname:..
+		}
+	];
+	
+	for(let i=0;i<arrobj.length;i++){
+		
+		console.log(`
+				id :: ${arrobj[i].id}
+				....
+				${arrobj[i].country.cname}
+				${arrobj[i].month.join(" ")}
+				
+				
+		`);
+		
+		...
+		
+		arrobj[i].result.foreach((item)=>{
+				...
+		})
+		
+	}
+	
+2 Additional Features
+3 Oops 
+	- classes
+	- method
+	- inheritance 
+	- polymorphism
+4 Class
+5 Property
+6 Method
+7 Constructor
+
+summary & Interview Questions
+1 How to create Array of Object
+2 What is property,class & object?
+3 How to iterate Array of Object?
+
+Today's Lecture Agenda
+1 Access Specifier
+2 access in same package
+3 access in Different package
+4 Inheritance
+5 method Override
+
+summary & Interview Questions
+1 How to create class in typescript?
+2 How to method?
+3 How to create Object?
+4 Where to apply access specifier?
+5 How to access class in same package?
