@@ -1,0 +1,44 @@
+Last Lecture Agenda
+1 Access Specifier
+	public,private & protected
+2 access in same package
+	export class 
+	
+	import {Myclass} from './demo1';
+	
+	
+3 access in Different package
+	import {Myclass} from '../Day09/demo1';
+4 Inheritance
+	export class Shape{
+		Myarea(){
+		...
+		}
+	}
+	
+	export class Circle extends Shape {
+		
+		constructor(...){
+			super();
+		}
+		
+		override Myarea(){
+			....
+		}
+	}
+5 method Override
+
+summary & Interview Questions
+1 How to create class in typescript?
+2 How to method?
+3 How to create Object?
+4 Where to apply access specifier?
+5 How to access class in same package?
+
+Today's Lecture Agenda
+1 Interface
+2 Composition/ has a relationship
+
+summary & Interview Questions
+1 How to use interface
+2 what is composition
