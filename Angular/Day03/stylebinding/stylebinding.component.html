@@ -1,0 +1,27 @@
+<p>stylebinding works!</p>
+<!-- syntax 
+    [style.csspropertyname]="propertyName"
+-->
+
+<h2 [style.color]="mycolor" >Apply Style Binding</h2>
+
+<h2 [style.color]="rating<4?'red':'green'" >Apply Style Binding On Condition</h2>
+
+<!-- ngStyle 
+    - It is Attribute Directive
+    - U can apply Any HTML tag 
+    - if u want use u hv to set a json Object 
+    - [ngStyle]="jsonObject"
+-->
+
+<div [ngStyle]="jsonObj" >
+    Apply ngStyle attribute directive 
+</div>
+<hr>
+<div [ngStyle]="{
+    'color':'blue',
+    'fontSize':'32px',
+    'font-family':'Courier New'
+}" >
+    Apply ngStyle attribute directive 
+</div>

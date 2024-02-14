@@ -1,0 +1,102 @@
+Last Lecture Agenda
+1 Angular Arch. Overview
+	- It is component Orientaed arch.
+	- component has minimum 3 file max 4 file 
+	1 view file => .html => only one 
+	2 stylesheet file => .css => multiple 
+	3 component file => .ts => only one 
+	4 testing file => spec.ts 
+	
+	- to write metadata
+		- It gives extra information about that component
+			
+			@Component({
+			....
+			})
+	- data binding 
+		1 one way data binding
+			1 string interpolation
+			2 property binding
+			3 style binding
+			4 class binding
+		2 Two way data binding
+	- event Binding 
+		- data flow from view to component
+		- One way binding 
+		- click ,change,custom event, mouse event ,K/b ....
+	- Directive 
+		- to change the behaviour of html element dynamically 
+		- attribute directive,component directive, structural directive,event directive
+	- App Module 
+		- Every Angular Application has its own root module app.module.ts 
+		- one & more module is present 
+		@ngModule({
+		
+		})
+	    
+		1 declaration : 
+			- to register your component 
+			- u can register custom pipe 
+		2 import 
+			- to register ur module or inbuilt module
+		3 service =>
+		    - It is simple class 
+			- To write BL 
+			- to register ur service 
+			- it gives providers key 
+			- with the help of DI we can use that service
+		4 Routing
+			- navigation from one component to another component
+			- u can send a data to component
+			- it provide lazy loading 
+	- injector 
+		- to inject 3rd party service 
+		- u can inject inbuilt services as well 
+			
+	
+2 Application Flow
+3 Component creation
+	1 manually 
+	
+	@Component({
+		selector:'app-employee',
+		templateUrl:'./employee.component.html',
+		styleUrls:['./employee.component.css']
+	})
+	export class EmployeeCopmonet{
+	
+	}
+	
+	app.module.ts 
+	declaration: [
+		EmployeeCopmonet
+	]
+	
+	app.component.html
+	<app-employee>
+	
+	2 Through Cli 
+	ng g c student
+
+summary & Interview Questions
+1 Explain Angular Arch in brief?
+2 Explain Application Flow of angular application?
+3 How to create component?
+
+Today's Lecture Agenda
+1 Data Binding
+	- data flow from component to view file 
+	1 string interpolation
+	2 Property Binding
+	3 style binding
+	4 class binding
+2 String Interpolation
+	{{'Hi Welcome '+name}}
+3 Property Binding
+<input [value]="name">
+
+4 Style binding
+
+summary & Interview Questions
+1 Explain Data Binding 
+2 What is difference between String interpolation & property Binding 
