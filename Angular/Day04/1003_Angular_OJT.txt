@@ -1,0 +1,63 @@
+Last Lecture Agenda
+1 Data Binding
+	- data flow from component to view file 
+	1 string interpolation
+	2 Property Binding
+	3 style binding
+	4 class binding
+2 String Interpolation
+	<h2> {{'Hi Welcome '+name}}</h2>
+	<img src=" {{imgUrl}} ">
+	<h2> {{num+num}}</h2>
+	.ts file 
+	imgUrl:string='...'
+	num:number=4;
+
+3 Property Binding
+
+<input [value]="name">
+<img [src]="imgUrl">
+
+.ts file 
+imgUrl:string='..';
+
+
+4 Style binding
+	<h2 [style.color]="mycolor" > Style Binding</h2>
+	<h2 [style.color]="rating<4?'red':'green'" > Style Binding</h2>
+	
+	<div [ngStyle]="jsonObj">
+		...
+	</div>
+	
+	
+	.ts file 
+	mycolor:string="red";
+	rating:number=2;
+	
+	jsonObj={
+		color:'red',
+		fontSize:'32px',
+		'font-family':'..'
+	}
+	
+
+summary & Interview Questions
+1 Explain Data Binding 
+2 What is difference between String interpolation & property Binding 
+
+
+Today's Lecture Agenda
+1 class Binding
+2 Event binding
+	- Data flow from view to component 
+	
+3 click event
+
+summary & Interview Questions
+1 Explain Class Binding
+2 How to use Event Binding
+3 What is event Handler?
+
+
+
