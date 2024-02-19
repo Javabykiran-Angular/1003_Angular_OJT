@@ -1,0 +1,32 @@
+
+.mycommon{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mybtn{
+    border: 2px solid green;
+}
+
+
+#input1{
+    border: 2px solid red;
+}
+
+#input2{
+    border: 2px dotted blue;
+}
+
+/* input{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* button{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 8px;
+} */

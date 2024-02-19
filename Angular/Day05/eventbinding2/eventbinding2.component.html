@@ -1,0 +1,35 @@
+<p>eventbinding2 works!</p>
+
+
+<!-- $event 
+    - It is special variable given by angular 
+    - It gives current DOM Element Information
+    - We can only access a model of that particular element 
+-->
+
+<!-- <button value="Doller Event..." (click)="onDollerEvent($event)" >Doller Event</button>
+<br><br> -->
+
+<!-- template Ref Variable
+    - It gives DOM Element information
+    - It holds the object / model/handle of particular DOM element 
+    - #uniqueName
+    - we can manipuate data as well as behaviour of element 
+-->
+
+<!-- <input #inputname type="text" placeholder="Enter the Name "><br><br>
+<button (click)="onSend(inputname)" >Send</button>
+<hr>
+<input #inputname1 type="text" placeholder="Enter the Name "><br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> -->
+
+<label for="">Num1:: &nbsp;&nbsp;</label> 
+<input id="input1" class="mycommon" #inputnum1 type="text" placeholder="Enter The num1"><br><br>
+<label for="">Num2:: &nbsp;&nbsp;</label> 
+<input id="input2" class="mycommon" #inputnum2 type="text" placeholder="Enter The num2"><br><br>
+<button class="mycommon mybtn" (click)="onAddition(inputnum1.value,inputnum2.value)" >Addition</button><br><br>
+<label for="">Result &nbsp;&nbsp;</label> 
+<input class="mycommon" [value]="result" type="text" placeholder="Result"><br><br> 
+<hr>
+
+<input (change)="onChange()" type="text" placeholder="Enter the Name ">

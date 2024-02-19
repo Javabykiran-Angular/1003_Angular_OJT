@@ -1,0 +1,19 @@
+Last Lecture Agenda
+1 Test 1 Typescript 
+
+summary & Interview Questions
+NA
+
+Today's Lecture Agenda
+1 $event
+2 Template Ref Variable
+3 Real time Example
+4 change event 
+
+summary & Interview Questions
+1 What is $event?
+2 What is Template ref variable?
+3 Difference between $event & Template ref variable
+
+
+  
