@@ -1,0 +1,23 @@
+<p>eventbinding3 works!</p>
+<input type="text" (keyup)="onKeyup()"
+placeholder="Enter the Key up Event "> <br><br>
+
+<input type="text" (keydown)="onKeyDown()"
+placeholder="Enter the Key Down Event "> <br><br>
+
+<input type="text" (keyup.enter)="onEnterKey()"  placeholder="Event Filtering"> <br><br>
+
+<button  (click)="result=8+8" >Addition</button>{{result}}
+<hr>
+
+<!-- ngModel 
+    - It is attribute Directive 
+    - To get updatated data 
+    - We have to use property for storing purpose 
+    - notation is called banana in the box 
+     [(ngModel)]="propertyBinding"
+     - u can apply any html tag as per ur requirement 
+     - we have to import one Module that is FormSModule 
+-->
+<input  type="text" [(ngModel)]="name" placeholder="Enter the name "> {{name}}
+

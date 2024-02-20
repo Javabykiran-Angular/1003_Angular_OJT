@@ -1,0 +1,68 @@
+Last Lecture Agenda
+1 $event
+	- Current DOM Element Info
+	<button value="...." (click)="onSend($event)">Send
+	
+	.ts file 
+	onSend(myevent:any){
+	....
+	console.log(myevent.target.value);
+	
+	}
+2 Template Ref Variable
+	<input #inputname>
+	<button (click)="onSend(inputname.value )">
+	.ts file 
+	onSend(myname:any){
+		console.log(...);
+		console.log(myname.value);
+		myname.style.background="green";
+		...
+	}
+3 Real time Example
+	<input #input1>
+	<input #input2>
+	<button (click)="onAddition(input1.value,input2.value)">
+	<input [value]="result">
+	
+	.ts 
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		...
+		this.result=n1+n2;
+	}
+4 change event 
+	<input (change)="onChange()">
+	.ts 
+	onChange(){
+	....
+	}
+
+summary & Interview Questions
+1 What is $event?
+2 What is Template ref variable?
+3 Difference between $event & Template ref variable
+
+Today's Lecture Agenda
+1 K/B Event
+	1 keyup
+	2 keydown
+2 Event Filtering
+	- u can apply on specific key 
+3 event binding without event Handler 
+	- pre condition
+			u have to create a property 
+			- one line logic is three
+4 Two way data binding
+	
+
+summary & Interview Questions
+1 explain k/b event?
+2 What is event filtering?
+3 What is Two way data binding?
+4 Explain ngModel?
+5 what is purpose of ngModel?
+
+
+
+  
