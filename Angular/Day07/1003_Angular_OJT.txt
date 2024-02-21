@@ -1,0 +1,64 @@
+Last Lecture Agenda
+1 K/B Event
+	1 keyup
+		<input (keyup)="onKeyup()">
+		.ts 
+		onKeyup(){
+		....
+		}
+	2 keydown
+	
+	<input (keydown)="onKeydown()">
+		.ts 
+		onKeydown(){
+		....
+		}
+2 Event Filtering
+	- u can apply on specific key 
+	
+	<input (keyup.enter)="onkeyEnter()">
+	.ts file 
+	onkeyEnter(){
+	....
+	}
+	
+3 event binding without event Handler 
+	- pre condition
+			u have to create a property 
+			- one line logic is there 
+	<button (click)="result=8+8">{{result}}
+	
+	.ts file 
+	result:number=0;
+	
+4 Two way data binding
+	<input [(ngModel)]="name">{{name}}
+	.ts file 
+	name:string='';
+
+summary & Interview Questions
+1 explain k/b event?
+2 What is event filtering?
+3 What is Two way data binding?
+4 Explain ngModel?
+5 what is purpose of ngModel?
+
+Today's Lecture Agenda
+1 Structural Directive
+	- if u want update ur DOM Structure dynamically 
+	1 *ngIf => check the condition 
+	2 *ngFor => to dynamic iteration 
+	3 *ngSwitch => to execute a specific case 
+	- * It indicates it is structural directive
+2 *ngIf directive
+	ng-template => Component Directive 
+3 *ngFor directive
+
+summary & Interview Questions
+1 What is structural directive
+2 How *ngIf works?
+3 Why we use *ngFor directive?
+
+
+
+  
