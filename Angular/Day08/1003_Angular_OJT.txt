@@ -1,0 +1,57 @@
+Last Lecture Agenda
+1 Structural Directive
+	- if u want update ur DOM Structure dynamically 
+	1 *ngIf => check the condition 
+	2 *ngFor => to dynamic iteration 
+	3 *ngSwitch => to execute a specific case 
+	- * It indicates it is structural directive
+2 *ngIf directive
+	ng-template => Component Directive 
+	div *ngIf="rating<4;else myelsepart">
+			<h2> .....
+		</div>
+	.ts file 
+	rating:number=21;
+	<ng-template #myelsepart>
+		<h2> ...
+	</ng-template>
+	
+	
+3 *ngFor directive
+	<u>
+		<li *ngFor="let item of course">	
+		{{item}}
+		</li>
+	</ul>
+	
+	<table>
+		<thead>
+			<tr>
+				..
+		<tbody>
+			<tr *ngFor="let item of arrProduct;index as i">
+				<td> {{item.name}}</td>
+				....
+			</tr>
+			
+				
+
+summary & Interview Questions
+1 What is structural directive
+2 How *ngIf works?
+3 Why we use *ngFor directive?
+
+Today's Lecture Agenda
+1 Mouse Event
+	1 mouseover 
+	2 mouseout 
+2 Task Completion
+
+summary & Interview Questions
+1 How to use mouse event?
+2 Where to Use of mouseover event?
+3 Where to Use of mouseout event? 
+
+
+
+  
