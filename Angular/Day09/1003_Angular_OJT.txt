@@ -1,0 +1,161 @@
+Last Lecture Agenda
+1 Mouse Event
+	1 mouseover 
+	2 mouseout 
+	
+	<table>
+		<th>
+		...
+	<tbody>
+		<tr (mouseover)="onMouseOver(item)" 
+			(mouseout)="onMouseOut()"
+		*ngFor="let item of arrProd;index as i"
+			[ngClass]="{
+				'highlight':selected===item.name
+			}"
+		>
+			<td>...
+		</tr>
+	</tbody>
+	
+	.ts
+	selected:string='';
+	onMouseOver(item:any){
+		this.selected=item.name;
+		
+	}
+	
+	onMouseOut(){
+	this.selected='';
+	}
+	
+2 Task Completion
+
+summary & Interview Questions
+1 How to use mouse event?
+2 Where to Use of mouseover event?
+3 Where to Use of mouseout event? 
+
+Today's Lecture Agenda
+1 what is Angular => Pratik, 
+ - Angular is front end Tech.
+ - It is Freamwork developed by google 
+ - Angular is used to developed Web Application  as well as cross platform application.
+ - Angular is rewritten in typescript 
+ - It developed SPA Application to increase your angular performance
+ - Angular is component based Architecture.
+ - Enterprise Application is design by angular like gmail,flipkart,sbi Mutual funds,ganna.com 
+ 
+2 What is different between Angular Js and Angular => Kunal 
+	- Angular js is Js based / Angular is Typescript 
+	- it follows MVC pattern / MVW pattern
+	- It is Object based lang / It is OOPS based lang 
+	- It is memeory management is not appropriate / appropriate memeory management
+	- Angular Performance is Decrease / performance is increase 
+	- It not support mobile community / it support mobile community 
+	
+3 What is Key Feature of Angular/Why we use angular / Advantage of Angular? => Harshal 
+	
+	- It easy to build application with the web 
+	- Angular has declarative template,end to end tooling,services ,DI,Module concept
+	- It is support all platform as well as cross platform 
+	- It is universal freamwork 
+	- It is MVW Architecture pattern follow 
+	- It has inbuild CLI 
+	- It has code splitting functionality.
+	- It incerase Speed & performance 
+	
+4 What is TypeScript  and why it is used in Angular  => vaishali 
+	- Typescript is developed by Microsoft
+	- Typescript is Superset of Js
+	- It is combination of type + script 
+		i.e it follows Oops concept & scripting functionality 
+	- It conatins ecma Script + JS ecma script version + OOPS Concept + module concept
+	- it has compiler that transcompile ur .ts file to js file 
+	- It has Strong static typing functionality
+	- It shows compile time error
+	- It supports OOPS Concept 
+	
+5 Explain the concept of data binding in angular => damodar 
+	1 In data binding u have to send data from component to view i.e it is one way direction so it is called one way data binding
+ 2 we can display or render data dynamically for that we use data binding
+ 3 in data binding has 2 types 
+	1 one way data binding
+	2 two way data binding
+	
+ - one way data binding direction has 4 technique 
+	1 string interpolation => It is Used to render a dynamic data to end user 
+	2 property binding => It is Used to bind a property to attribute 
+	3 style binding => To apply style dynamically to particular html element 
+	4 class binding => To apply Css Classes dynamically to particular html element.
+	
+- two way data binding
+	- To Achieve two way data binding we used ngModel
+	- ngModel is attribute directive 
+	
+
+6 What are directives in angular? => kanchan 
+	Directives in Angular are powerful components that allow you to extend and modify the behavior of HTML elements. They provide a way to manipulate the DOM (Document Object Model) structure, add interactivity, and dynamically change the appearance or behavior of elements.
+	Directives have different type
+	1 Attribute directives
+		-> ngStyle,ngClass,ngModal 
+	2 Structural directives
+		1 *ngIf 
+		2 *ngFor
+		3 *ngSwitch
+	3 component directives
+		ng-template ,router-outlet
+	4 event directives
+	onSubmit	
+	
+7 Difference between structural and attribute directives => deshmukh 
+	
+8 What is the purpose of ngmodel in angular => Suresh 
+	
+ - ngmodel is Two way data binding 
+ - It is attribute directives
+ - For ngmodel we have to import FormsModule into app.module.ts file  and then u can use it in you dom Structure
+ - It is used to update data dynamically 
+ - It is used in banana in box notation [()] 
+ - it is used on any html tag 
+ - [(ngModel)]="propertyname" =>
+ property we have to create in component file 
+	
+9 What is the purpose of ngmodule in angular => Swaraj 
+
+- Module is nothing but simple collection of classes, interface,sercices,componet 
+- It is a decorator @ngmodule({
+		declaration:[],
+		import:[], 
+		provider:[],
+		bootstrap:[AppComponent]
+ })
+ - it is class level decorator
+ - In your angular application one root module is present that is appModule 
+ - with the help of ngmodule we can create your own module to used in angular application
+ ng g m user --routing 
+ - with the help of ngmodule we can achieve lazy loading in routing. 
+ 
+10 How to use event Binding? => pratik 
+
+ - It is one way direction binding
+ - it flows data from view file to component file 
+ - for that we use event handler to bind a specific event 
+ 
+ 
+11 Difference Between $Event & template Reference variable
+ $event 
+    - It is special variable given by angular 
+    - It gives current DOM Element Information
+    - We can only access a model of that particular element we can not change or manipulate that data 
+	- Generally we used $event on component interaction 
+
+template Ref Variable
+    - It gives DOM Element information
+    - It holds the object / model/handle of particular DOM element 
+    - #uniqueName
+	- we can use any html tag as wellas on ur selector 
+    - we can manipuate data as well as behaviour of element 
+
+
+  
