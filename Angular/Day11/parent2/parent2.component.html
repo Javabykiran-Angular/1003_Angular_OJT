@@ -1,0 +1,33 @@
+
+<p>parent2 works!</p>
+
+<h2>Data ::{{childStrMsg}} </h2>
+
+<h2>Date is  :: {{dateReceived}} </h2>
+
+<table border="1px">
+    <thead>
+    <tr>
+        <th>Sr No</th>
+        <th>Product name</th>
+        <th>Product Price</th>
+        <th>Product Qty</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of arrChildProduct;index as i ">
+        <td> {{i+1}} </td>
+        <td> {{item.name}} </td>
+        <td> {{item.price}} </td>
+        <td> {{item.qty}} </td>
+    </tr>
+</tbody>
+
+</table>
+
+<hr>
+<app-child2 (strChildEvent)="childStrMsg=$event" 
+(arrprodChildEvent)="arrChildProduct=$event"
+
+(dateChildEvent)="onReceivedDate($event)"
+></app-child2>
