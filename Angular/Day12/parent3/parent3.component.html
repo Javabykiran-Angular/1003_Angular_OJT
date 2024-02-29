@@ -1,0 +1,18 @@
+<p>parent3 works!</p>
+
+<div #mydiv >
+    <h2>Div Element is Access</h2>
+</div>
+<hr>
+
+<div class="mainDiv">
+
+    <div class="btnDiv">
+        <button (click)="onPropertyAccess()" >Property Access</button>
+        <button (click)="onMethodAccess()" >Method Access</button><br><br>
+        <button (click)="onIncrement()" >Increment</button>
+        <button (click)="onDecrement()" >Decrement</button>
+    </div>
+    <div class="childDiv"><app-child3></app-child3>
+    </div>
+</div>

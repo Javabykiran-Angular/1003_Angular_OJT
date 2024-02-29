@@ -1,0 +1,26 @@
+Last Lecture Agenda
+1 Component Interaction
+	- if u want send data(string/json/number/any/arrofObject) from one component to another component
+	- establish the relation between parent & child 
+2 @Input()
+ - To send data from parent to child 
+ - field/property level decorator 
+
+3 @Output()
+	- To send data from child to parent 
+	- for that we have create a custom event 
+
+summary & Interview Questions
+1 What is Component interaction
+2 How to use component interaction
+3 why we use @input decorator?
+4 How we can send data from one component to another component?
+
+Today's Lecture Agenda
+1 ViewChild
+	1 if u want access parent html element in parent ts file without event binding
+	2 U can access child property & child method in parent ts file to control child logic 
+	
+summary & Interview Questions
+1 How to use @ViewChild?
+2 What is purpose of ViewChild?
