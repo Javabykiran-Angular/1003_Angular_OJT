@@ -1,0 +1,47 @@
+Last Lecture Agenda
+1 Pipe
+	- it transform ur data without changing its original value 
+	- Pipe used on View File 
+	
+	<h2>{{strdetails | lowercase}}</h2>
+	<h2>{{strdetails | uppercase}}</h2>
+	<h2>{{strdetails | titlecase}}</h2>
+	<h2>{{strdetails | slice:1:5}}</h2>
+	
+	<h2>{{0.25 | percent}}</h2>
+	<h2>{{0.025 | percent:'1.1'}}</h2>
+	
+	<h2>{{5.678569 | number:'1.2-3'}}</h2>
+	<h2>{{5.6785569 | number:'1.2-3'}}</h2>
+	<h2>{{0.25 | currency}}</h2>
+	<h2>{{0.25 | currency:'INR':'code'}}</h2>
+	
+	<h2>{{mydate | date:'mediumDate'}}</h2>
+	<h2>{{mydate | date:'dd-MM-yyyy'}}</h2>
+	
+	<h2>{{mydate | date:'longDate'|uppercase}}</h2>
+	
+2 Inbuild Pipe 
+
+summary & Interview Questions
+1 What is Pipe 
+2 Why we Use pipe?
+3 how inbuild pipe work?
+4 which are inbuild pipes are there list it?
+
+Today's Lecture Agenda
+1 Custome Pipe
+	1 through the CLI pipe create 
+	2 manual pipe created 
+2 PipeTransform
+3 transform(value :any,...arg:any[])
+@Pipe
+4 Pure Pipe
+
+5 Impure Pipe
+
+summary & Interview Questions
+1 How to create Custome Pipe?
+2 What is use of PipeTransform?
+3 Explain Types of Pipe 
+
