@@ -1,0 +1,90 @@
+Last Lecture Agenda
+1 Services
+	- It is simple class 
+	- We can Write Our BL 
+	- it is used to connect front end to backend server 
+	- it is used for code maintaintabilty
+	- it is used for code resualiblity
+	- U can used for auth.
+	- It is provide isolation to component 
+2 Dependancy Injection
+
+summary & Interview Questions
+1 What is service?
+2 What is use of service?
+3 How to integrate service in angular application?
+4 Which type of Dependancy Injection is used ?
+
+Today's Lecture Agenda
+1 Http Method
+	1 get => fetch the data from backend server  
+	2 post => data from frontend server to backend server 
+	3 put  => to update a particular Record 
+	4 delete => to delete a particular Record 
+	
+2 Http Request/Response
+	
+	Http Request => Req. header + Req Body		
+		Req. header
+			- Ip
+			- method
+			- protocol version
+			- url 
+			- time date 
+			- contentType 
+				- image 
+				- audio
+				- video 
+				- pdf 
+				- json object 
+				- text/html 
+		Req Body
+			- Data 
+				- json format 
+				- xml data 
+	
+	
+	Http Reponse => Res. header + Res Body		
+		Res. header
+			- Ip
+			- method
+			- protocol version
+			- url 
+			- time date 
+			- contentType 
+				- image 
+				- audio
+				- video 
+				- pdf 
+				- json object 
+				- text/html 
+			- status code 
+				1 2xx => 200-299 => success / ok 
+				2 3xx => 300-399 => redirection 
+				3 4xx => 400-499 => client side error 
+				4 5xx => 500-599 => Server side error
+				
+		Res Body
+			- Data 
+				- json format 
+				- xml data 
+	
+3 https://jsonplaceholder.typicode.com/posts
+	It is fake service 
+		it can not store ur data into database but it gives a response of ur request 
+4 HttpClientModule => import in app.module.ts 
+	- HttpClient 	
+5 @Injectable
+6 What is observable
+7 get method
+8 post method
+
+summary & Interview Questions
+1 What is Http Request/Response
+2 Why we use HttpClientModule
+3 What is role of @Injectable
+4 What is observable
+5 How to integrate get method 
+
+
+
