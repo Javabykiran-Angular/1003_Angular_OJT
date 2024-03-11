@@ -1,0 +1,17 @@
+tr,th,td{
+    border: 1px solid;
+}
+table{
+    border-collapse: collapse;
+}
+
+button{
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+button:hover{
+    background-color: green;
+    color: white;
+}
