@@ -1,0 +1,63 @@
+Last Lecture Agenda
+1 Child Routes
+
+	[
+		{
+			path:"product",childern:[
+				{
+					path:"",component:ProductComponet
+				},
+				{
+					path:"laptop",component:LaptopComponent
+				},
+				...
+			]
+		}
+	];
+	
+	home.html
+	<a routerLink="/product">...
+	
+	ProductComponet.html 
+	
+	<a routerLink="laptop">Laptop 
+
+2 Lazy Loading
+	1 create ur custom module/ feature module 
+	2 create own routing module file 
+	
+	ng g m user --routing
+	
+	user-routing.ts
+	[
+		{
+			path:"",component: UserComponet
+		},
+		{
+			path:"AddUser",component: AddUserComponent
+		}
+	]
+	
+	approuting.ts
+	[
+		{
+			path:"user",loadchildern: ()=>import("./user/user.module").then(m=>m.UserModule)
+		}
+	]
+	
+3 Modify the Routing
+
+
+summary & Interview Questions
+1 How to use Child routes in Angular
+2 What is Lazy Loading
+3 How we can Achieve the lazy loading
+
+Today's Lecture Agenda
+1 Subject
+2 BehavioralSubject
+3 How to send data to multiple component
+
+summary & Interview Questions
+1 How to send data to multiple component
+2 What is BehavioralSubject Subject
