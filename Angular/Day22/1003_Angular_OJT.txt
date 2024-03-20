@@ -1,0 +1,61 @@
+Last Lecture Agenda
+1 Subject
+2 BehavioralSubject
+3 How to send data to multiple component
+app.com.html
+<app-notifaction>
+
+ng g s notification
+
+
+notifications=new BehiourSubject<string>("hi Welcome");
+
+sendMessage(msg:string){
+	this.notifaction.next(msg);
+}
+
+querycomp.ts
+
+constructor(private notify:notification){}
+
+onSend(msg){
+	this.notify.sendMessage(msg);
+}
+
+notifaction.ts 
+
+constructor(private notify:notification){}
+
+GetdataFromComp(){
+	this.notify.notifications
+	.subscribe((msg)=>{
+	....
+	})
+}
+
+
+summary & Interview Questions
+1 How to send data to multiple component
+2 What is BehavioralSubject Subject
+
+Today's Lecture Agenda
+1 Overview of Bootstrap
+	- It is css framework 
+	- It makes application attractive
+	- it geneartes template code 
+	- it makes application responsive
+	
+2 Integration of bootstrap
+	1 online integrate
+		- 24*7 internet support 
+		- CDN Link => content delivery n/w 
+	2 offline integrate
+		npm install bootstrap@5.0.* --save 
+		@import "~bootstrap/dist/css/bootstrap.css";
+		
+3 Basic grid system of bootstrap
+
+summary & Interview Questions
+1 Why we use bootstrap?
+2 How to integrate the bootstrap?
+3 How grid system work in bootstrap?
