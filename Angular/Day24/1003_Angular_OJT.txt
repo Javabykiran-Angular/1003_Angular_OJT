@@ -1,0 +1,34 @@
+Last Lecture Agenda
+1 FormControl
+
+	- It is class given by angular 
+	1 valid  => true/false
+	2 invalid  => true /false 
+	3 touched  => true /false 
+	4 pristine => true/false 
+	5 dirty   =>  true / false 
+	6 errors   => Object 
+	
+	
+	steps 
+	1 create instance of FormControl class => we use ngModel without banana in the box notation & we have to use name attribute 
+	2 create template reference variable => assign it the ngModel 
+	3 use errors Object for validation & u hv to use required attribute
+	
+
+2 Template Driven Form
+	- login,signup,f/b form 
+	- basic level validation is performed on view file 
+	
+
+summary & Interview Questions
+1 Explain TDF 
+
+Today's Lecture Agenda
+1 Continue TDF 
+2 ngSubmit
+3 ngValue 
+
+summary & Interview Questions
+1 How to use ngSubmit?
+2 Why we use ngValue?
