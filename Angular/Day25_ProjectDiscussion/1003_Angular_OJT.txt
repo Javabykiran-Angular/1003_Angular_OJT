@@ -1,0 +1,90 @@
+Last Lecture Agenda
+1 Continue TDF 
+2 ngSubmit
+3 ngValue 
+
+summary & Interview Questions
+1 How to use ngSubmit?
+2 Why we use ngValue?
+
+Today's Lecture Agenda
+1 Backend Project Discussion
+
+
+Database => 
+	Country 
+	cid , cname 
+	
+	@Entity
+	class Country {
+		@Id 
+		@Generatedvalue(Stratgy=GenerationType.Identity)
+		int cid;
+		String cname;
+	
+	}
+	
+	Employee
+	1 id => primary=> int 
+	2 name  => String 
+	3 status => String => data => active,inactive,suspend
+	4 department => String 
+	5 createdBy  => String => name of that creator 
+	6 createdDate => Date 
+	7 UpdatatedBy  => String 
+	8 upda=tatedDate => Date 
+	9 email Id => String => unique
+	10 Mobileno => String 
+		
+		@OneToMany
+	11 country  => Object => data => cid & cname 
+	
+	API List 
+	1 AddCountry =>  return type => String 
+	2 Update Country  => String 
+	3 delete country => String 
+	4 list of all Country  => List<Country>
+	5 get particular country record => Object Of Country
+	6 Add Employee => String 
+	7 Update Employee => String 
+	8 delete Employee  => String 
+	9 List of all employee => List<Employee>
+	10 get particular employee record  => Object of Employee
+	11 get employee Record by its status => List<Employee>
+	12 get Employee Record by createtion date  to date To from Date => List<Employee>
+	
+	Entity Class 
+	Registration => Spearate Entity class 
+		id 
+		name 
+		emailid => unique 
+		password
+		mobileno
+		gender
+		
+	13 Login Api => Apply on Registration 
+		- emailid & password  => Inputs for this API 
+		Response 
+		1 If user is valid 
+			{
+				msg:"Valid User",
+				user:{
+					
+				}
+			}
+		2 if user is not valid 
+			{
+				msg:"InValid User",
+				user:null
+			}
+		
+	
+Complete this task within 3 days 
+
+create new Project in Angular 
+ng new project-work
+	
+
+summary & Interview Questions
+NA for This Session
+
