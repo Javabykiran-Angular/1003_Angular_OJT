@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <app-header></app-header>
+<br>
+
+<button routerLink="/addemployee" class="btn btn-success">Add Employee</button>
+
+<button class="btn btn-warning" (click)="onUpdate(popUp)" >Update Employee</button>
+<br><br>
+
+<ng-template #popUp >
+    
+    <app-updateemployee [parentdata]="empObj" ></app-updateemployee>
+
+    <button class="btn btn-danger" (click)="modalRef.hide()">Cancel</button>
+</ng-template>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Sr No</th>
+            <th>Action</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Status</th>
+            <th>Created Date</th>
+            <th>Created By</th>
+            <th>Updatated date </th>
+            <th>Updatated By</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let item of empData;index as i">
+                <td> {{i+1}} </td>
+                <td><input (click)="onEdit(item)" type="radio" name="record" ></td>
+                <td> <a [routerLink]="['/details',item.id]"> {{item.name}}</a> </td>
+                <td> {{item.department}} </td>
+                <td><h4><span [ngClass]="{
+                    'badge':true,
+                    'rounded-pill':true,
+                    'bg-success':item.status.toLowerCase()==='active',
+                    'bg-warning':item.status.toLowerCase()==='inactive',
+                    'bg-danger':item.status.toLowerCase()==='suspend'
+
+                }"  > {{item.status}}</span> </h4></td>
+                <td> {{item.createddtm|date}} </td>
+                <td> {{item.createdby}} </td>
+                <td> {{item.updateddtm | date:"dd-MM-yyyy"}} </td>
+                <td> {{item.updatedby}} </td>
+                <td> {{item.country.cname}} </td>
+            </tr>
+    </tbody>
+</table>
+
+
+</div>
