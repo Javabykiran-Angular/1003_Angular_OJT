@@ -1,0 +1,17 @@
+Last Lecture Agenda
+1 Delete Records full flow 
+
+summary 
+Interview Questions
+Not Allowed for Project Session 
+
+
+Today's Lecture Agenda
+1 Filter pipe
+2 Pagination
+3 notification
+
+summary 
+ Interview Questions
+Not Allowed for Project Session 
+
